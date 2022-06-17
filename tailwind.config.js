@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/static/*.html", "./src/**/*.js", "./src/**/*.css"],
+  content: ["*.html", "./src/**/*.js", "./src/**/*.css"],
   theme: {
     fontFamily: {
       'sans': ['SF Pro Text', 'sans-serif'],
@@ -15,3 +15,4 @@ module.exports = {
   },
   plugins: [],
 }
+
