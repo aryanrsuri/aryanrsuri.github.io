@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OpenSource</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/dist/output.css">
+    </head>
+    <body>
+        <!-- <script src="node_modules/citation-js/build/citation.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-8" type="text/javascript"></script>
+        <script>
+            const Cite = require('citation-js')
+        </script>
+        <script src="/src/js/opensource.js" async defer></script>
+        <div id="rf-wrap">
+            <div class="main-div section-header">
+                <h6>
+                    <a href="index.html">Aryan Suri</a>
+                </h6>
+            </div>
+            <div id="rf-title"><h2>OpenSource</h2></div>
+            <div id="rf-input-div">
+                <input onfocus="this.value=''" type="text" id="rf-input" placeholder="Paste any BIBTEX, DOI, JSON, or WIKIDATAID to cite.">
+                <button onclick="create()"> Cite </button>
+            </div>
+            <div id="rf-tb-div">
+                <table id="rf-tb">
+                    <tbody id="rf-tb-tb"></tbody>
+                </table>
+
+                <div id="rf-tb-downloads">
+                    <a href="#" onclick="downloadReference('bib')">Bibtex</a>
+                    <a href="#" onclick="downloadReference('json')">Json</a>
+                    <a href="#" onclick="downloadReference('ris')">Ris</a>
+                    <a href="#" onclick="downloadReference('rtf')">Rtf</a>
+                </div> 
+            </div>   
+        </div>
+    </body>
+</html>

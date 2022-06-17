@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+yarn.lock
+tailwind.config.js
+package-lock.json
