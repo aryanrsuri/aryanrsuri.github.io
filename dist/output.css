@@ -831,10 +831,22 @@ video {
   .lg\:max-w-2xl {
     max-width: 42rem;
   }
+
+  .lg\:max-w-4xl {
+    max-width: 56rem;
+  }
 }
 
 @media (min-width: 1536px) {
   .\32xl\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .\32xl\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .\32xl\:max-w-5xl {
+    max-width: 64rem;
   }
 }
