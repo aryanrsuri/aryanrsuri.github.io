@@ -592,6 +592,10 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -639,20 +643,16 @@ video {
   max-width: fit-content;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .grow {
   flex-grow: 1;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .flex-row {
@@ -667,12 +667,26 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
 .gap-8 {
   gap: 2rem;
+}
+
+.bg-faded-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 242 255 / var(--tw-bg-opacity));
+}
+
+.bg-faded-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 249 211 / var(--tw-bg-opacity));
 }
 
 .p-8 {
@@ -699,6 +713,10 @@ video {
   padding-top: 2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-mono {
   font-family: SF Pro Display, sans-serif;
 }
@@ -715,6 +733,11 @@ video {
 
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -783,45 +806,19 @@ video {
   color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:w-32 {
-    width: 8rem;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:w-64 {
-    width: 16rem;
-  }
-
-  .md\:w-48 {
-    width: 12rem;
-  }
-
-  .md\:max-w-md {
-    max-width: 28rem;
-  }
-
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-80 {
-    width: 20rem;
-  }
-
-  .lg\:max-w-lg {
-    max-width: 32rem;
-  }
-
-  .lg\:max-w-xl {
-    max-width: 36rem;
-  }
-
-  .lg\:max-w-5xl {
-    max-width: 64rem;
+  .lg\:max-w-4xl {
+    max-width: 56rem;
   }
 
   .lg\:max-w-3xl {
@@ -831,22 +828,18 @@ video {
   .lg\:max-w-2xl {
     max-width: 42rem;
   }
-
-  .lg\:max-w-4xl {
-    max-width: 56rem;
-  }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:max-w-5xl {
+    max-width: 64rem;
+  }
+
   .\32xl\:max-w-4xl {
     max-width: 56rem;
   }
 
   .\32xl\:max-w-3xl {
     max-width: 48rem;
-  }
-
-  .\32xl\:max-w-5xl {
-    max-width: 64rem;
   }
 }
