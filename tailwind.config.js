@@ -16,6 +16,7 @@ module.exports = {
         'faded-green': '#e4ffee',
       'faded-purple': '#eff2ff',
       'faded-yellow': '#fdf9d3',
+      'beige': '#dfd3c3',
       }
     },
   },
