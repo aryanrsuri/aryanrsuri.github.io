@@ -12,6 +12,8 @@ module.exports = {
         'bounce': 'bounce 2s ease-in-out infinite',
       },
       colors : {
+        'pcgreen' : '#0BC278',
+        'pcblue' : '#129BEE',
         'faded-blue': '#eff7fa',
         'faded-green': '#e4ffee',
       'faded-purple': '#eff2ff',
